@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="UTM-AvoBold.ttf">
+            <string>UTMAvoBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TypeView" customModule="VBee" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="282" height="26"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="key_red_72" translatesAutoresizingMaskIntoConstraints="NO" id="2Bg-QZ-mdb">
+                    <rect key="frame" x="69.5" y="0.0" width="26" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="2Bg-QZ-mdb" secondAttribute="height" id="vwJ-Me-0EG"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THÚ CƯNG" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="da7-da-R4f">
+                    <rect key="frame" x="100.5" y="2.5" width="81.5" height="22"/>
+                    <fontDescription key="fontDescription" name="UTMAvoBold" family="UTM Avo" pointSize="15"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="da7-da-R4f" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="AhC-uU-3o8"/>
+                <constraint firstItem="2Bg-QZ-mdb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ER2-oz-aJ7"/>
+                <constraint firstItem="da7-da-R4f" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PhS-7B-WYY"/>
+                <constraint firstItem="da7-da-R4f" firstAttribute="leading" secondItem="2Bg-QZ-mdb" secondAttribute="trailing" constant="5" id="jSf-xt-bae"/>
+                <constraint firstAttribute="bottom" secondItem="2Bg-QZ-mdb" secondAttribute="bottom" id="ycp-OO-eDr"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="2Bg-QZ-mdb" id="nKj-VY-tAD"/>
+                <outlet property="nameLabel" destination="da7-da-R4f" id="EnF-WW-0UL"/>
+            </connections>
+            <point key="canvasLocation" x="-12" y="-86"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="key_red_72" width="36" height="36"/>
+    </resources>
+</document>

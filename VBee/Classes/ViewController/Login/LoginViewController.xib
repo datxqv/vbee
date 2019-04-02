@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="UTM-Avo-Bold.ttf">
+            <string>UTMAvoBold</string>
+        </array>
+        <array key="UTM-Avo.ttf">
+            <string>UTM-Avo</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="VBee" customModuleProvider="target">
+            <connections>
+                <outlet property="emailTextField" destination="Qmu-2p-0RT" id="Bax-e6-ki1"/>
+                <outlet property="forgotPasswordButton" destination="IAb-IN-brS" id="jkd-zQ-TFO"/>
+                <outlet property="loginButton" destination="Kj9-qK-4Ys" id="ckY-lm-xcI"/>
+                <outlet property="passwordTextField" destination="zBi-fc-hKR" id="w5d-8U-Gye"/>
+                <outlet property="titleLabel" destination="Egw-GD-jCd" id="CpM-Ap-8D7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_1" translatesAutoresizingMaskIntoConstraints="NO" id="qmL-7U-U5A">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCO-t4-ruV" customClass="VView" customModule="VBee" customModuleProvider="target">
+                    <rect key="frame" x="20" y="30" width="280" height="35"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwt-XD-xP1">
+                            <rect key="frame" x="116.5" y="0.0" width="47" height="35"/>
+                            <fontDescription key="fontDescription" name="UTMAvoBold" family="UTM Avo" pointSize="17"/>
+                            <state key="normal" title="Login">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eti-Fh-Aef">
+                            <rect key="frame" x="0.0" y="0.0" width="70" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="Ryl-ak-oMx"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="ic_back"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.91372549020000005" green="0.96470588239999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="uwt-XD-xP1" secondAttribute="bottom" id="Hop-nm-ZS0"/>
+                        <constraint firstItem="Eti-Fh-Aef" firstAttribute="top" secondItem="aCO-t4-ruV" secondAttribute="top" id="M01-0P-IEH"/>
+                        <constraint firstItem="Eti-Fh-Aef" firstAttribute="leading" secondItem="aCO-t4-ruV" secondAttribute="leading" id="SHI-eI-mlp"/>
+                        <constraint firstAttribute="height" constant="35" id="arU-fh-R8u"/>
+                        <constraint firstItem="uwt-XD-xP1" firstAttribute="top" secondItem="aCO-t4-ruV" secondAttribute="top" id="lvb-Fu-yEN"/>
+                        <constraint firstAttribute="bottom" secondItem="Eti-Fh-Aef" secondAttribute="bottom" id="qjF-ww-JdG"/>
+                        <constraint firstItem="uwt-XD-xP1" firstAttribute="centerX" secondItem="aCO-t4-ruV" secondAttribute="centerX" id="vcY-Vt-7gs"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.59999999999999998" green="0.73333333329999995" blue="0.84313725490000002" alpha="1" colorSpace="deviceRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f46-gd-5w3">
+                    <rect key="frame" x="25" y="199" width="270" height="170"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="datxqvh@gmail.com" borderStyle="bezel" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qmu-2p-0RT" customClass="VTextField" customModule="VBee" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="270" height="35"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="eOC-6U-pw6"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" name="UTM-Avo" family="UTM Avo" pointSize="15"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.59999999999999998" green="0.73333333329999995" blue="0.84313725490000002" alpha="1" colorSpace="deviceRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="anhdat93" borderStyle="bezel" placeholder="Mật khẩu" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zBi-fc-hKR" customClass="VTextField" customModule="VBee" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="65" width="270" height="35"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="rkg-YD-xle"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" name="UTM-Avo" family="UTM Avo" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.59999999999999998" green="0.73333333329999995" blue="0.84313725490000002" alpha="1" colorSpace="deviceRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kj9-qK-4Ys" customClass="VButton" customModule="VBee" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="130" width="270" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="3ca-Sa-ezI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="UTM-Avo" family="UTM Avo" pointSize="17"/>
+                            <state key="normal" title="Đăng nhập">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.59999999999999998" green="0.73333333329999995" blue="0.84313725490000002" alpha="1" colorSpace="deviceRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="loginButtonDidClicked:" destination="-1" eventType="touchUpInside" id="W4R-0K-Ylf"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Qmu-2p-0RT" secondAttribute="trailing" id="7Ma-6k-az9"/>
+                        <constraint firstItem="Qmu-2p-0RT" firstAttribute="top" secondItem="f46-gd-5w3" secondAttribute="top" id="AmQ-Zr-Txb"/>
+                        <constraint firstAttribute="trailing" secondItem="Qmu-2p-0RT" secondAttribute="trailing" id="Gxb-d8-on8"/>
+                        <constraint firstAttribute="bottom" secondItem="Kj9-qK-4Ys" secondAttribute="bottom" id="JnV-Pi-dx9"/>
+                        <constraint firstItem="zBi-fc-hKR" firstAttribute="leading" secondItem="f46-gd-5w3" secondAttribute="leading" id="PBz-wN-8L1"/>
+                        <constraint firstAttribute="trailing" secondItem="Kj9-qK-4Ys" secondAttribute="trailing" id="PFF-Da-7fE"/>
+                        <constraint firstItem="Qmu-2p-0RT" firstAttribute="leading" secondItem="f46-gd-5w3" secondAttribute="leading" id="Ta2-ym-RS7"/>
+                        <constraint firstItem="Qmu-2p-0RT" firstAttribute="leading" secondItem="f46-gd-5w3" secondAttribute="leading" id="kOI-KT-7Uq"/>
+                        <constraint firstAttribute="trailing" secondItem="zBi-fc-hKR" secondAttribute="trailing" id="nOR-xk-DgR"/>
+                        <constraint firstAttribute="height" constant="170" id="qiU-Ji-aXz"/>
+                        <constraint firstItem="Kj9-qK-4Ys" firstAttribute="leading" secondItem="f46-gd-5w3" secondAttribute="leading" id="uXI-kZ-Gep"/>
+                        <constraint firstItem="zBi-fc-hKR" firstAttribute="top" secondItem="Qmu-2p-0RT" secondAttribute="bottom" constant="30" id="wkF-Ih-hTY"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V-Track" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Egw-GD-jCd" customClass="VLabel" customModule="VBee" customModuleProvider="target">
+                    <rect key="frame" x="40" y="30" width="240" height="60"/>
+                    <color key="backgroundColor" red="0.91372549020000005" green="0.96470588239999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="ffD-zO-PX8"/>
+                        <constraint firstAttribute="width" constant="240" id="qle-NP-Fb0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="UTMAvoBold" family="UTM Avo" pointSize="26"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="colorOpacity">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAb-IN-brS" customClass="VButton" customModule="VBee" customModuleProvider="target">
+                    <rect key="frame" x="25" y="377" width="270" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ZIP-0z-c1s"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="UTM-Avo" family="UTM Avo" pointSize="17"/>
+                    <state key="normal" title="Quên mật khẩu">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="forgotPasswordButtonDidClicked:" destination="-1" eventType="touchUpInside" id="uob-et-z4D"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aCO-t4-ruV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="3Ba-fP-ZBf"/>
+                <constraint firstItem="qmL-7U-U5A" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3Dg-c6-5wV"/>
+                <constraint firstItem="qmL-7U-U5A" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9y1-o4-a9g"/>
+                <constraint firstAttribute="trailing" secondItem="IAb-IN-brS" secondAttribute="trailing" constant="25" id="FFp-Xf-Cr6"/>
+                <constraint firstItem="f46-gd-5w3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="FW2-E9-VIH"/>
+                <constraint firstAttribute="bottom" secondItem="qmL-7U-U5A" secondAttribute="bottom" id="H7G-OF-Doi"/>
+                <constraint firstItem="aCO-t4-ruV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="OaP-Ah-a3D"/>
+                <constraint firstItem="Egw-GD-jCd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="Oba-pr-XrA"/>
+                <constraint firstAttribute="trailing" secondItem="aCO-t4-ruV" secondAttribute="trailing" constant="20" id="R6q-RK-fTj"/>
+                <constraint firstItem="f46-gd-5w3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ycg-XH-2ly"/>
+                <constraint firstItem="IAb-IN-brS" firstAttribute="top" secondItem="f46-gd-5w3" secondAttribute="bottom" constant="8" id="bDK-Rb-YpQ"/>
+                <constraint firstItem="f46-gd-5w3" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="eFI-xe-bYd"/>
+                <constraint firstItem="IAb-IN-brS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="25" id="f2F-Eg-wma"/>
+                <constraint firstAttribute="trailing" secondItem="qmL-7U-U5A" secondAttribute="trailing" id="gsN-3q-MWX"/>
+                <constraint firstItem="Egw-GD-jCd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ybQ-ZL-X8x"/>
+                <constraint firstAttribute="trailing" secondItem="f46-gd-5w3" secondAttribute="trailing" constant="25" id="yvf-QQ-9dP"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Egw-GD-jCd"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="-166" y="-9"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background_1" width="540" height="960"/>
+        <image name="ic_back" width="17" height="17"/>
+    </resources>
+</document>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="UTM-Avo-Bold.ttf">
+            <string>UTMAvoBold</string>
+        </array>
+        <array key="UTM-Avo.ttf">
+            <string>UTM-Avo</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RingingDeviceViewController" customModule="VBee" customModuleProvider="target">
+            <connections>
+                <outlet property="deviceButton" destination="WZV-on-eSM" id="d1l-qZ-KzG"/>
+                <outlet property="ringingButton" destination="eTy-aM-YeN" id="5BN-md-NgR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_1" translatesAutoresizingMaskIntoConstraints="NO" id="df9-IM-7YB">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTy-aM-YeN" customClass="VButton" customModule="VBee" customModuleProvider="target">
+                    <rect key="frame" x="20" y="478" width="280" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ozf-6C-YLO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="UTM-Avo" family="UTM Avo" pointSize="17"/>
+                    <state key="normal" title="Đổ chuông">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="ringingButtonDidClicked:" destination="-1" eventType="touchUpInside" id="Obp-gZ-NAR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZV-on-eSM" customClass="VButton" customModule="VBee" customModuleProvider="target">
+                    <rect key="frame" x="110" y="216" width="100" height="70"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="DGu-NR-Nuj"/>
+                        <constraint firstAttribute="width" constant="100" id="GiC-Vl-9XF"/>
+                    </constraints>
+                    <state key="normal" image="Off.128.128">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="Onl.128.128"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="50"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bạn đang tiến gần thiết bị, nhấn &quot;Đổ chuông&quot; để phát hiện thiết bị" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSM-vQ-84S">
+                    <rect key="frame" x="2.5" y="434" width="315" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="315" id="qtb-BL-lkM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uOJ-28-oWn" customClass="VView" customModule="VBee" customModuleProvider="target">
+                    <rect key="frame" x="20" y="30" width="280" height="35"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3w-qh-XQR">
+                            <rect key="frame" x="101.5" y="0.0" width="77" height="35"/>
+                            <fontDescription key="fontDescription" name="UTMAvoBold" family="UTM Avo" pointSize="17"/>
+                            <state key="normal" title="RINGING">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f0N-hi-STI">
+                            <rect key="frame" x="0.0" y="0.0" width="70" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="z9c-dU-noX"/>
+                            </constraints>
+                            <inset key="contentEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="ic_back"/>
+                            <connections>
+                                <action selector="backButtonDidClicked:" destination="-1" eventType="touchUpInside" id="hxV-kE-UjP"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.91372549020000005" green="0.96470588239999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="f0N-hi-STI" firstAttribute="leading" secondItem="uOJ-28-oWn" secondAttribute="leading" id="1Wg-lq-cxT"/>
+                        <constraint firstItem="w3w-qh-XQR" firstAttribute="top" secondItem="uOJ-28-oWn" secondAttribute="top" id="2y9-es-jje"/>
+                        <constraint firstAttribute="height" constant="35" id="7Ax-iS-DMp"/>
+                        <constraint firstItem="w3w-qh-XQR" firstAttribute="centerX" secondItem="uOJ-28-oWn" secondAttribute="centerX" id="imE-wb-SwL"/>
+                        <constraint firstItem="f0N-hi-STI" firstAttribute="top" secondItem="uOJ-28-oWn" secondAttribute="top" id="ohP-Vu-0zc"/>
+                        <constraint firstAttribute="bottom" secondItem="w3w-qh-XQR" secondAttribute="bottom" id="w9e-lX-85R"/>
+                        <constraint firstAttribute="bottom" secondItem="f0N-hi-STI" secondAttribute="bottom" id="xhy-Xz-mCn"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.59999999999999998" green="0.73333333333333328" blue="0.84313725490196079" alpha="1" colorSpace="deviceRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mobile_196" translatesAutoresizingMaskIntoConstraints="NO" id="VFu-YN-nd4">
+                    <rect key="frame" x="112" y="296" width="96" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="dwk-1O-l8a"/>
+                        <constraint firstAttribute="width" constant="96" id="e73-Q6-q4C"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bag.128.128" translatesAutoresizingMaskIntoConstraints="NO" id="iAf-NW-VC0">
+                    <rect key="frame" x="110" y="108" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="IqL-ax-CIS"/>
+                        <constraint firstAttribute="height" constant="100" id="mgg-N1-a2o"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="WZV-on-eSM" firstAttribute="top" secondItem="iAf-NW-VC0" secondAttribute="bottom" constant="8" id="0YJ-3u-1GH"/>
+                <constraint firstItem="HSM-vQ-84S" firstAttribute="centerX" secondItem="eTy-aM-YeN" secondAttribute="centerX" id="2oD-ru-X8l"/>
+                <constraint firstItem="VFu-YN-nd4" firstAttribute="top" secondItem="WZV-on-eSM" secondAttribute="bottom" constant="10" id="547-6h-KRz"/>
+                <constraint firstItem="eTy-aM-YeN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="60s-Zh-9qo"/>
+                <constraint firstAttribute="trailing" secondItem="eTy-aM-YeN" secondAttribute="trailing" constant="20" id="8qu-iB-0nV"/>
+                <constraint firstItem="eTy-aM-YeN" firstAttribute="top" secondItem="HSM-vQ-84S" secondAttribute="bottom" constant="8" id="9vG-NB-9ve"/>
+                <constraint firstItem="df9-IM-7YB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Bom-0h-DmV"/>
+                <constraint firstItem="VFu-YN-nd4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="D2C-r4-yfo"/>
+                <constraint firstItem="uOJ-28-oWn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Dc5-4a-6id"/>
+                <constraint firstItem="WZV-on-eSM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JN7-Bn-FLt"/>
+                <constraint firstAttribute="trailing" secondItem="df9-IM-7YB" secondAttribute="trailing" id="QuR-jG-Zc8"/>
+                <constraint firstAttribute="trailing" secondItem="uOJ-28-oWn" secondAttribute="trailing" constant="20" id="WMc-UO-BUM"/>
+                <constraint firstItem="HSM-vQ-84S" firstAttribute="top" secondItem="VFu-YN-nd4" secondAttribute="bottom" constant="10" id="WPT-MJ-V9V"/>
+                <constraint firstItem="df9-IM-7YB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="e2u-K2-zDt"/>
+                <constraint firstAttribute="bottom" secondItem="df9-IM-7YB" secondAttribute="bottom" id="jh2-mz-vj6"/>
+                <constraint firstItem="iAf-NW-VC0" firstAttribute="centerX" secondItem="WZV-on-eSM" secondAttribute="centerX" id="nSf-md-tPM"/>
+                <constraint firstItem="uOJ-28-oWn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="ocs-LU-ncw"/>
+                <constraint firstAttribute="bottom" secondItem="eTy-aM-YeN" secondAttribute="bottom" constant="50" id="pKJ-g4-pAg"/>
+            </constraints>
+            <point key="canvasLocation" x="254" y="-180"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Bag.128.128" width="64" height="64"/>
+        <image name="Off.128.128" width="64" height="64"/>
+        <image name="Onl.128.128" width="64" height="64"/>
+        <image name="background_1" width="540" height="960"/>
+        <image name="ic_back" width="17" height="17"/>
+        <image name="mobile_196" width="98" height="98"/>
+    </resources>
+</document>
